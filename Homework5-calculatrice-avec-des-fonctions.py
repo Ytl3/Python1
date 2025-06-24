@@ -1,8 +1,5 @@
 import math 
-print ("the calculator with function")
-print ("Entrer any two numbers you want ")
-a=float(input("Give the first number :"))
-b=float(input("Give the second number :"))
+
 def add(a,b):
     return a+b
 def soustraction(a,b):
@@ -35,6 +32,11 @@ def calculatrice():
     print("7:sqrt")
     print("8:quit")
 
+
+calculatrice()
+a=float(input("Give the first number :"))
+b=float(input("Give the second number :"))
+
 while True:
     choice=int(input("please enter a number between 1 and 8 :"))
     if choice==str():
@@ -57,6 +59,7 @@ while True:
         print(f"la soustraction entre {a} esr {b} =",soustraction(a, b))
     elif choice==1:
         print(f"la addition entre {a} esr {b} =",add(a, b))
+
     
          
     
